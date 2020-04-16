@@ -50,7 +50,7 @@
                 <aside class="blog-sidebar">
                     <header class="blog-header">
                         <div class="blog-info">
-                            <a class="blog-logo" href="<%=Utils.AbsoluteWebRoot %>" tabindex="-1">
+                            <a class="blog-logo" href="/" tabindex="-1">
                                 <img src="<%=Utils.AbsoluteWebRoot %>[CUSTOMFIELD|THEME|Standard-2017|Logo|Custom/Themes/Standard-2017/src/img/logo.png/]" alt="<%=BlogSettings.Instance.Name %>" />
                                 <%=BlogSettings.Instance.Name %>
                             </a>
@@ -70,9 +70,9 @@
                         </div>
                         <nav class="blog-nav">
                             <ul>
-                                <li><a href="<%=Utils.AbsoluteWebRoot %>" class="item-home" title="<%=Resources.labels.home %>"><i class="fa fa-home"></i></a></li>
-                                <li><a href="<%=Utils.AbsoluteWebRoot %>archive" class="item-archive" title="<%=Resources.labels.archive %>"><i class="fa fa-align-left"></i></a></li>
-                                <li><a href="<%=Utils.AbsoluteWebRoot %>contact" class="item-contact" title="<%=Resources.labels.contact %>"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="/" class="item-home" title="<%=Resources.labels.home %>"><i class="fa fa-home"></i></a></li>
+                                <li><a href="/archive" class="item-archive" title="<%=Resources.labels.archive %>"><i class="fa fa-align-left"></i></a></li>
+                                <li><a href="/contact" class="item-contact" title="<%=Resources.labels.contact %>"><i class="fa fa-envelope"></i></a></li>
                                 <li><a runat="server" id="aLogin" class="item-login" title=""><span id="aLoginText" runat="server"></span></a></li>
                             </ul>
                         </nav>
@@ -80,13 +80,10 @@
                     <blog:WidgetZone ID="WidgetZone1" runat="server" ZoneName="be_WIDGET_ZONE" />
                     <footer class="blog-footer">
                         <p>
-                            Copyright &copy; <%=DateTime.Now.Year %>
+                            Copyright &copy; 2017 - <%=DateTime.Now.Year %> Richard Hu
                         </p>
                         <p>
-                            Powered by <a href="https://blogengine.io/" target="_blank" title="BlogEngine.NET <%=BlogSettings.Instance.Version() %>">BlogEngine.NET</a>
-                        </p>
-                        <p>
-                            Designed by <a href="http://francis.bio/" rel="nofollow" target="_blank">Francis Bio</a>
+                            Blog Powered by <a href="https://blogengine.io/" target="_blank" title="BlogEngine.NET <%=BlogSettings.Instance.Version() %>">BlogEngine.NET</a>
                         </p>
                     </footer>
                 </aside>

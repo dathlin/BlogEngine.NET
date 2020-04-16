@@ -67,15 +67,6 @@
         $(".blog-logo img").hide();
     }
 
-    // support theme
-    var adminNav = $(".item-admin");
-    var adminAlert = $(".admin-alerts-true");
-    var adminName = $(".post-author a").html();
-    var adminAlertHtml = '<div class="support-theme visible-md visible-lg alert alert-info clearfix"><p class="pull-left">Hi ' + adminName + ', You can read <a href="http://francis.bio/notes/blogengine-standard-2016-theme/" target="_blank" rel="nofollow"><b>This Article</b></a> that will help you customize this theme easily.</p><a href="admin/#/custom/themes" class="pull-right visible-lg"><i class="fa fa-times" data-toggle="tooltip" data-placement="left" title="remove from theme options"></i></a></div>';
-    if (adminNav.length && adminAlert.length && (location.pathname == '/' || location.pathname == '/default.aspx')) {
-        adminAlert.prepend(adminAlertHtml);
-    }
-
     //
     $(".blog-nav li a, [data-toggle=tooltip]").tooltip();
 
